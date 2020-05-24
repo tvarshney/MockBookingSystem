@@ -1,0 +1,16 @@
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\bin\Debug\netcoreapp2.2\MockBookingSystem.API.deps.json
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\bin\Debug\netcoreapp2.2\MockBookingSystem.API.runtimeconfig.json
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\bin\Debug\netcoreapp2.2\MockBookingSystem.API.runtimeconfig.dev.json
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\bin\Debug\netcoreapp2.2\MockBookingSystem.API.dll
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\bin\Debug\netcoreapp2.2\MockBookingSystem.API.pdb
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\obj\Debug\netcoreapp2.2\MockBookingSystem.API.csprojAssemblyReference.cache
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\obj\Debug\netcoreapp2.2\MockBookingSystem.API.RazorAssemblyInfo.cache
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\obj\Debug\netcoreapp2.2\MockBookingSystem.API.RazorAssemblyInfo.cs
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\obj\Debug\netcoreapp2.2\MockBookingSystem.API.AssemblyInfoInputs.cache
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\obj\Debug\netcoreapp2.2\MockBookingSystem.API.AssemblyInfo.cs
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\obj\Debug\netcoreapp2.2\MockBookingSystem.API.RazorTargetAssemblyInfo.cache
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\obj\Debug\netcoreapp2.2\MockBookingSystem.API.dll
+C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\obj\Debug\netcoreapp2.2\MockBookingSystem.API.pdb
