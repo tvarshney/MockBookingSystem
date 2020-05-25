@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using MockBookingSystem.API.DbContexts;
+using MockBookingSystem.API.Services;
 
 namespace MockBookingSystem.API
 {
@@ -15,7 +18,11 @@ namespace MockBookingSystem.API
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<BookingSystemContext>(opt => opt.UseInMemoryDatabase("bookingSystem-api-db-inmemory"));
+            
             services.AddMvc();
+            
+            services.AddScoped<IBookingSystemRepository, BookingSystemRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -25,8 +32,11 @@ namespace MockBookingSystem.API
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseHttpsRedirection();
 
             app.UseMvc();
+
+            
 
         }
     }
