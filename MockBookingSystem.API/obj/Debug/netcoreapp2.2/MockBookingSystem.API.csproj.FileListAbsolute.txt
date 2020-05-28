@@ -6,7 +6,6 @@ C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\bin\Deb
 C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\bin\Debug\netcoreapp2.2\MockBookingSystem.API.runtimeconfig.dev.json
 C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\bin\Debug\netcoreapp2.2\MockBookingSystem.API.dll
 C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\bin\Debug\netcoreapp2.2\MockBookingSystem.API.pdb
-C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\obj\Debug\netcoreapp2.2\MockBookingSystem.API.csprojAssemblyReference.cache
 C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\obj\Debug\netcoreapp2.2\MockBookingSystem.API.RazorAssemblyInfo.cache
 C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\obj\Debug\netcoreapp2.2\MockBookingSystem.API.RazorAssemblyInfo.cs
 C:\Users\kshalkoska\source\repos\MockBookingSystem\MockBookingSystem.API\obj\Debug\netcoreapp2.2\MockBookingSystem.API.AssemblyInfoInputs.cache
