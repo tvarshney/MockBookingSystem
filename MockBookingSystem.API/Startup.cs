@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using MockBookingSystem.API.DbContexts;
 using MockBookingSystem.API.Services;
 
+
 namespace MockBookingSystem.API
 {
     public class Startup
@@ -18,8 +19,9 @@ namespace MockBookingSystem.API
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddDbContext<BookingSystemContext>(opt => opt.UseInMemoryDatabase("bookingSystem-api-db-inmemory"));
-            
+
             services.AddMvc();
             
             services.AddScoped<IBookingSystemRepository, BookingSystemRepository>();
