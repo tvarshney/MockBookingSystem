@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MockBookingSystem.API.DbContexts;
 
 namespace MockBookingSystem.API
 {
@@ -14,7 +16,15 @@ namespace MockBookingSystem.API
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            var host = CreateWebHostBuilder(args).Build();
+   
+            using (var scope = host.Services.CreateScope())
+            using (var context = scope.ServiceProvider.GetService<BookingSystemDbContext>())
+            {
+                context.Database.EnsureCreated();
+            }
+
+            host.Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MockBookingSystem.API.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,16 +11,27 @@ namespace MockBookingSystem.API.Controllers
     [Route("api/mockbooking")]
     public class MockBookingController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult GetFlights()
+        private IBookingSystemRepository _bookingSystemRepository;
+
+        public MockBookingController(IBookingSystemRepository bookingSystemRepository)
         {
-            return NotFound();
+            _bookingSystemRepository = bookingSystemRepository;
         }
 
         [HttpGet]
-        public ActionResult GetHotels()
+        [Route("getflights")]
+        public async Task<IActionResult> GetFlights()
         {
-            return NotFound();
+            var flightEntities = await _bookingSystemRepository.GetFlightsAsync();
+            return Ok(flightEntities);
+        }
+
+        [HttpGet]
+        [Route("gethotels")]
+        public async Task<IActionResult> GetHotels()
+        {
+            var hotelEntities = await _bookingSystemRepository.GetHotelsAsync();
+            return Ok(hotelEntities);
         }
     }
 }
