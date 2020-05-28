@@ -19,7 +19,7 @@ namespace MockBookingSystem.API
             var host = CreateWebHostBuilder(args).Build();
    
             using (var scope = host.Services.CreateScope())
-            using (var context = scope.ServiceProvider.GetService<BookingSystemContext>())
+            using (var context = scope.ServiceProvider.GetService<BookingSystemDbContext>())
             {
                 context.Database.EnsureCreated();
             }

@@ -10,8 +10,8 @@ namespace MockBookingSystem.API.Services
 {
     public class BookingSystemRepository : IBookingSystemRepository
     {
-        private readonly BookingSystemContext _context;
-        public BookingSystemRepository(BookingSystemContext context)
+        private readonly BookingSystemDbContext _context;
+        public BookingSystemRepository(BookingSystemDbContext context)
         {
             _context = context;
         }

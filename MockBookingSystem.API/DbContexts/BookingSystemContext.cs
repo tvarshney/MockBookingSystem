@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace MockBookingSystem.API.DbContexts
 {
-    public class BookingSystemContext : DbContext
+    public class BookingSystemDbContext : DbContext
     {
-        public BookingSystemContext(DbContextOptions<BookingSystemContext> options)
+        public BookingSystemDbContext(DbContextOptions<BookingSystemDbContext> options)
             : base(options)
         {
         }

@@ -20,7 +20,7 @@ namespace MockBookingSystem.API
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<BookingSystemContext>(opt => opt.UseInMemoryDatabase("bookingSystem-api-db-inmemory"));
+            services.AddDbContext<BookingSystemDbContext>(opt => opt.UseInMemoryDatabase("bookingSystem-api-db-inmemory"));
 
             services.AddMvc();
             
