@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MockBookingSystem.API.DbContexts;
+using MockBookingSystem.API.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +12,10 @@ namespace MockBookingSystem.API.Controllers
     [Route("api/search")]
     public class SearchController : ControllerBase
     {
-        private readonly BookingSystemDbContext _context;
-        public SearchController(BookingSystemDbContext context)
+        private readonly ManagerService _service;
+        public SearchController(ManagerService service)
         {
-            _context = context;
+            _service = service;
         }
     }
 }
