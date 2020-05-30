@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MockBookingSystem.API.DbContexts;
+using MockBookingSystem.API.Models.Requests;
 using MockBookingSystem.API.Services;
 using System;
 using System.Collections.Generic;
@@ -13,11 +14,18 @@ namespace MockBookingSystem.API.Controllers
     [Route("api/book")]
     public class BookController : ControllerBase
     {
-        private readonly ManagerService _service;
+        private readonly IManager _service;
 
-        public BookController(ManagerService service)
+        public BookController(IManager service)
         {
             _service = service;
+        }
+
+        [HttpGet(Name = "Search")]
+        [Route("search")]
+        public IActionResult Search([FromQuery] SearchReq search)
+        {
+            return Ok();//(await _service.SearchAsync(search));
         }
     }
 }

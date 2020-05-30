@@ -12,10 +12,12 @@ namespace MockBookingSystem.API.Controllers
     [Route("api/search")]
     public class SearchController : ControllerBase
     {
-        private readonly ManagerService _service;
-        public SearchController(ManagerService service)
+        private readonly IManager _service;
+        public SearchController(IManager service)
         {
             _service = service;
         }
+
+
     }
 }
