@@ -15,18 +15,23 @@ namespace MockBookingSystem.API.Services
         {
             _context = context;
         }
-        public BookRes Book(BookReq bookRequest)
+
+        public Task<BookRes> BookAsync(BookReq bookRequest)
         {
             throw new NotImplementedException();
         }
 
-        public CheckStatusRes CheckStatus(CheckStatusReq checkStatusRequest)
+        public Task<CheckStatusRes> CheckStatusAsync(CheckStatusReq checkStatusRequest)
         {
             throw new NotImplementedException();
         }
 
-        public SearchRes Search(SearchReq searchRequest)
+        public Task<SearchRes> SearchAsync(SearchReq searchRequest)
         {
+            if(searchRequest == null)
+            {
+                throw new ArgumentNullException(nameof(searchRequest));
+            }
             throw new NotImplementedException();
         }
     }

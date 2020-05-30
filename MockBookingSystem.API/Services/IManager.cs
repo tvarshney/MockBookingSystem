@@ -7,10 +7,10 @@ using MockBookingSystem.API.Models.Responses;
 
 namespace MockBookingSystem.API.Services
 {
-    interface IManager
+    public interface IManager
     {
-        SearchRes Search(SearchReq searchRequest);
-        BookRes Book(BookReq bookRequest);
-        CheckStatusRes CheckStatus(CheckStatusReq checkStatusRequest);
+        Task<SearchRes> SearchAsync(SearchReq searchRequest);
+        Task<BookRes> BookAsync(BookReq bookRequest);
+        Task<CheckStatusRes> CheckStatusAsync(CheckStatusReq checkStatusRequest);
     }
 }
