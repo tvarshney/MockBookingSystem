@@ -25,6 +25,8 @@ namespace MockBookingSystem.API
             services.AddMvc();
             
             services.AddScoped<IBookingSystemRepository, BookingSystemRepository>();
+
+            services.AddScoped<IBookingManager, BookingManagerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
