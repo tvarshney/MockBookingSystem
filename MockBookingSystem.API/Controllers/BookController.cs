@@ -21,11 +21,5 @@ namespace MockBookingSystem.API.Controllers
             _service = service;
         }
 
-        [HttpGet(Name = "Search")]
-        [Route("search")]
-        public IActionResult Search([FromQuery] SearchReq search)
-        {
-            return Ok();//(await _service.SearchAsync(search));
-        }
     }
 }

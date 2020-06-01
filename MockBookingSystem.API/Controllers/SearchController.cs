@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MockBookingSystem.API.DbContexts;
+using MockBookingSystem.API.Models.Requests;
 using MockBookingSystem.API.Services;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,12 @@ namespace MockBookingSystem.API.Controllers
             _service = service;
         }
 
+        [HttpGet(Name = "Search")]
+        [Route("search")]
+        public async Task<IActionResult> Search([FromQuery] SearchReq search)
+        {
+            return Ok(await _service.SearchAsync(search));
+        }
 
     }
 }
