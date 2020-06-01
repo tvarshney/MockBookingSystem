@@ -10,10 +10,10 @@ namespace MockBookingSystem.API.Controllers
 {
     [ApiController]
     [Route("api/checkstatus")]
-    public class CheckStatusController : ControllerBase
+    public class StatusCheckController : ControllerBase
     {
-        private readonly IManager _service;
-        public CheckStatusController(IManager service)
+        private readonly IBookingManager _service;
+        public StatusCheckController(IBookingManager service)
         {
             _service = service;
         }

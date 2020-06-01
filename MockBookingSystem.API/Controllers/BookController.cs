@@ -14,9 +14,9 @@ namespace MockBookingSystem.API.Controllers
     [Route("api/book")]
     public class BookController : ControllerBase
     {
-        private readonly IManager _service;
+        private readonly IBookingManager _service;
 
-        public BookController(IManager service)
+        public BookController(IBookingManager service)
         {
             _service = service;
         }

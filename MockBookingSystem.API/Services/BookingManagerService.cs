@@ -8,10 +8,10 @@ using MockBookingSystem.API.Models.Responses;
 
 namespace MockBookingSystem.API.Services
 {
-    public class ManagerService : IManager
+    public class BookingManagerService : IBookingManager
     {
         private readonly BookingSystemDbContext _context;
-        public ManagerService(BookingSystemDbContext context)
+        public BookingManagerService(BookingSystemDbContext context)
         {
             _context = context;
         }
