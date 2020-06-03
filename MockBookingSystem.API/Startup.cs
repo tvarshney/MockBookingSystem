@@ -22,6 +22,8 @@ namespace MockBookingSystem.API
 
             services.AddDbContext<BookingSystemDbContext>(opt => opt.UseInMemoryDatabase("bookingSystem-api-db-inmemory"));
 
+            services.AddMemoryCache();
+
             services.AddMvc();
             
             services.AddScoped<IBookingSystemRepository, BookingSystemRepository>();
