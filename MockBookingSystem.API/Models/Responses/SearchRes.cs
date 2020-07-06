@@ -7,6 +7,6 @@ namespace MockBookingSystem.API.Models.Responses
 {
     public class SearchRes
     {
-        public List<Option> Options { get; set; }
+        public List<Option> Options { get; set; } = new List<Option>();
     }
 }
