@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using MockBookingSystem.API.DbContexts;
 using MockBookingSystem.API.Models.Requests;
 using MockBookingSystem.API.Services;
@@ -14,13 +15,13 @@ namespace MockBookingSystem.API.Controllers
     public class SearchController : ControllerBase
     {
         private readonly IBookingManager _service;
+        private readonly IMemoryCache _cache;
         public SearchController(IBookingManager service)
         {
             _service = service;
         }
 
         [HttpGet(Name = "Search")]
-        [Route("search")]
         public async Task<IActionResult> Search([FromQuery] SearchReq search)
         {
             return Ok(await _service.SearchAsync(search));
