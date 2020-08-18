@@ -6,6 +6,7 @@ Powered by .NET Core 2.2.
 Supports Visual Studio, VS for Mac and CLI based environments, VS Code or any other code editor.
 
 Busnises perspective of the solution
+
 This is a simple mock booking system for the travel industry. 
 The solution will consist of an API which will provide the necessary endpoints to make a booking.
 The booking flow will contain 3 methods: 
